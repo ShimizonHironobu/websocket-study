@@ -27,7 +27,7 @@ window.Echo = new Echo({
 if (window.Echo) {
     console.log('echo');
     window.Echo.channel('test-channel')
-        .listen('.push-test', function(e) {
+        .listen('push-test', function(e) {
             console.log("test");
             console.log(e);
         });
